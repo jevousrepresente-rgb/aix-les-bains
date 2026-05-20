@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Investir à Aix-les-Bains — Jean-Pierre CLÉMENT · MeilleursBiens</title>
+<script async src="https://tally.so/widgets/embed.js"></script>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap');
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --rouge:#BA212F;--rouge-light:#f5e6e7;--gris:#5F6062;--gris-light:#f7f5f2;
+  --gris-mid:#e0dcd7;--text:#1a1a1a;--text-sec:#5F6062;--white:#ffffff;
+  --or:#c4913a;--or-light:#fdf3e3;--lac:#2a7fa5;--vert-savoie:#3a6b4a;
+}
+body{font-family:'Ubuntu',Arial,sans-serif;background:#f0ede8;color:var(--text);min-height:100vh;padding:0;}
+.page{max-width:780px;margin:0 auto;background:var(--white);box-shadow:0 4px 32px rgba(0,0,0,0.10);}
+
+.hero{position:relative;overflow:hidden;background:#1e4a5e;padding:0;}
+.hero-sky{position:absolute;top:0;left:0;right:0;bottom:0;background:linear-gradient(180deg,#e8d5a3 0%,#d4a96a 15%,#b07a3e 28%,#2a6b8a 42%,#1e5270 58%,#163d52 80%,#112e3e 100%);opacity:0.92;}
+.hero-top-overlay{position:absolute;top:0;left:0;right:0;height:110px;background:linear-gradient(180deg,rgba(10,20,28,0.72) 0%,rgba(10,20,28,0.0) 100%);z-index:1;}
+.hero-mountains{position:absolute;bottom:0;left:0;right:0;height:55%;background:url("data:image/svg+xml,%3Csvg viewBox='0 0 780 260' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 260 L0 160 L80 90 L130 130 L200 60 L270 110 L340 30 L410 80 L470 20 L540 70 L600 40 L660 85 L720 50 L780 90 L780 260 Z' fill='%23112e3e' opacity='0.85'/%3E%3Cpath d='M0 260 L0 190 L60 150 L120 170 L180 120 L240 145 L310 100 L370 130 L440 85 L500 115 L560 80 L620 110 L680 75 L740 105 L780 85 L780 260 Z' fill='%231a3f52' opacity='0.7'/%3E%3Cpath d='M0 260 L0 220 L100 190 L180 210 L260 175 L350 195 L430 165 L520 185 L600 160 L680 180 L780 155 L780 260 Z' fill='%232a6b8a' opacity='0.5'/%3E%3C/svg%3E") no-repeat bottom/cover;}
+.hero-lac{position:absolute;bottom:0;left:0;right:0;height:28%;background:linear-gradient(180deg,rgba(42,107,138,0.0) 0%,rgba(30,82,112,0.7) 40%,rgba(22,61,82,0.9) 100%);}
+.hero-reflet{position:absolute;bottom:0;left:0;right:0;height:22%;background:url("data:image/svg+xml,%3Csvg viewBox='0 0 780 120' xmlns='http://www.w3.org/2000/svg'%3E%3Cellipse cx='390' cy='60' rx='320' ry='30' fill='%23c4913a' opacity='0.12'/%3E%3Cellipse cx='390' cy='80' rx='200' ry='15' fill='%23e8d5a3' opacity='0.08'/%3E%3C/svg%3E") no-repeat center/cover;}
+.hero-content{position:relative;z-index:2;padding:44px;}
+.hero-brand{font-size:10px;font-weight:700;color:rgba(255,255,255,0.92);letter-spacing:2px;text-transform:uppercase;margin-bottom:28px;text-shadow:0 1px 4px rgba(0,0,0,0.5);}
+.hero-brand span{color:#e8c47a;}
+.hero-eyebrow{font-size:11px;font-weight:600;color:#ffffff;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:10px;text-shadow:0 1px 4px rgba(0,0,0,0.5);}
+.hero h1{font-family:'Playfair Display',serif;font-size:38px;font-weight:700;color:#ffffff;line-height:1.22;margin-bottom:16px;}
+.hero h1 em{font-style:italic;color:#e8c47a;}
+.hero-sub{font-size:13px;color:rgba(255,255,255,0.68);line-height:1.8;max-width:460px;margin-bottom:30px;}
+.hero-pills{display:flex;gap:8px;flex-wrap:wrap;}
+.pill{display:inline-flex;align-items:center;gap:6px;background:rgba(255,255,255,0.09);border:1px solid rgba(232,196,122,0.25);border-radius:20px;padding:5px 13px;font-size:11px;font-weight:500;color:rgba(255,255,255,0.80);}
+.pill-dot{width:6px;height:6px;border-radius:50%;background:#e8c47a;}
+.pill-dot.rouge{background:#e87a7a;}
+.pill-dot.vert{background:#7acfaa;}
+
+.bandeau{background:var(--or-light);border-left:4px solid var(--or);padding:18px 32px;font-size:13px;color:#6b4e1a;line-height:1.8;}
+.bandeau strong{color:var(--or);}
+
+.section{padding:30px 40px;}
+.section-title{font-size:10px;font-weight:700;color:var(--rouge);text-transform:uppercase;letter-spacing:1.5px;border-bottom:1px solid var(--gris-mid);padding-bottom:8px;margin-bottom:20px;}
+
+.avantages{display:grid;grid-template-columns:1fr 1fr;gap:12px;}
+.av-card{background:var(--gris-light);border-radius:6px;padding:16px 18px;border-left:3px solid var(--gris-mid);}
+.av-card.c-rouge{border-left-color:var(--rouge);}
+.av-card.c-lac{border-left-color:var(--lac);}
+.av-card.c-vert{border-left-color:var(--vert-savoie);}
+.av-card.c-or{border-left-color:var(--or);}
+.av-title{font-size:12px;font-weight:700;color:var(--text);margin-bottom:5px;}
+.av-body{font-size:11px;color:var(--text-sec);line-height:1.65;}
+.av-icon{font-size:17px;margin-bottom:7px;}
+
+.jb-box{background:linear-gradient(135deg,#1e3a4a 0%,#2a5e78 100%);border-radius:8px;padding:24px 28px;color:#fff;}
+.jb-box h3{font-size:13px;font-weight:700;color:#e8c47a;margin-bottom:16px;letter-spacing:.5px;text-transform:uppercase;}
+.jb-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;}
+.jb-kpi{text-align:center;padding:12px 8px;background:rgba(255,255,255,0.07);border-radius:6px;}
+.jb-kpi .val{font-size:22px;font-weight:700;color:#fff;}
+.jb-kpi .lbl{font-size:10px;color:rgba(255,255,255,0.55);margin-top:4px;line-height:1.5;}
+.jb-note{font-size:11px;color:rgba(255,255,255,0.5);margin-top:14px;line-height:1.6;}
+
+/* CTA SECTION SOIGNÉE */
+.cta-section{
+  background:linear-gradient(180deg,#fdf8f2 0%,#f9f3ea 100%);
+  padding:40px;
+  border-top:3px solid var(--or);
+}
+.cta-inner{
+  background:var(--white);
+  border-radius:10px;
+  border:1px solid var(--gris-mid);
+  padding:32px;
+  text-align:center;
+  box-shadow:0 2px 12px rgba(0,0,0,0.05);
+}
+.cta-icon{font-size:32px;margin-bottom:12px;}
+.cta-title{
+  font-family:'Playfair Display',serif;
+  font-size:22px;font-weight:700;
+  color:var(--text);margin-bottom:10px;
+}
+.cta-sub{
+  font-size:13px;color:var(--text-sec);
+  line-height:1.8;max-width:440px;
+  margin:0 auto 24px;
+}
+.cta-points{
+  display:flex;justify-content:center;gap:24px;
+  flex-wrap:wrap;margin-bottom:28px;
+}
+.cta-point{
+  display:flex;align-items:center;gap:6px;
+  font-size:12px;color:var(--text-sec);
+}
+.cta-point::before{content:'✓';color:var(--vert-savoie);font-weight:700;}
+.btn-cta{
+  display:inline-block;padding:14px 40px;
+  background:var(--rouge);color:#fff;border:none;
+  border-radius:6px;font-family:'Ubuntu',Arial,sans-serif;
+  font-size:15px;font-weight:700;cursor:pointer;
+  letter-spacing:.3px;text-decoration:none;
+  transition:opacity .15s,transform .1s;
+  box-shadow:0 3px 12px rgba(186,33,47,0.25);
+}
+.btn-cta:hover{opacity:.92;}
+.btn-cta:active{transform:scale(.99);}
+.cta-reassurance{
+  margin-top:16px;
+  font-size:11px;color:rgba(95,96,98,0.6);
+  line-height:1.6;
+}
+.cta-contact{
+  margin-top:20px;padding-top:20px;
+  border-top:1px solid var(--gris-mid);
+  font-size:12px;color:var(--text-sec);
+}
+.cta-contact strong{color:var(--rouge);}
+
+.footer{background:#1a1a1a;padding:18px 40px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;}
+.footer-left strong{font-size:13px;color:#fff;}
+.footer-left span{display:block;font-size:10px;color:rgba(255,255,255,0.45);margin-top:2px;}
+.footer-right{text-align:right;font-size:11px;color:rgba(255,255,255,0.50);line-height:1.9;}
+
+@media(max-width:560px){
+  .hero-content{padding:28px 20px;}
+  .section,.cta-section{padding:24px 20px;}
+  .cta-inner{padding:24px 16px;}
+  .bandeau{padding:14px 20px;}
+  .avantages,.jb-grid{grid-template-columns:1fr;}
+  .cta-points{flex-direction:column;align-items:center;gap:10px;}
+  .footer{flex-direction:column;text-align:center;}
+  .footer-right{text-align:center;}
+}
+</style>
+</head>
+<body>
+<div class="page">
+
+  <div class="hero">
+    <div class="hero-sky"></div>
+    <div class="hero-top-overlay"></div>
+    <div class="hero-mountains"></div>
+    <div class="hero-lac"></div>
+    <div class="hero-reflet"></div>
+    <div class="hero-content">
+      <div class="hero-brand"><span>MeilleursBiens</span> · Ambassadeur Savoie (73)</div>
+      <div class="hero-eyebrow">Investissement locatif neuf · Aix-les-Bains</div>
+      <h1>Au bord du Grand Lac,<br><em>au meilleur moment fiscal.</em></h1>
+      <p class="hero-sub">Aix-les-Bains, Zone A depuis 2024. Un marché en tension, un lac, une ville qui attire. Et un dispositif fiscal qui ne durera que jusqu'en 2028.</p>
+      <div class="hero-pills">
+        <div class="pill"><div class="pill-dot rouge"></div>Zone A · Plafond 14,03 €/m²</div>
+        <div class="pill"><div class="pill-dot vert"></div>Dispositif Jeanbrun 2026</div>
+        <div class="pill"><div class="pill-dot"></div>Programme neuf RE2020</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="bandeau">
+    <strong>Pourquoi Aix-les-Bains en 2026 ?</strong><br>
+    Reclassée Zone A en juillet 2024, Aix-les-Bains rejoint les marchés les plus tendus de Savoie. Demande locative soutenue, cadre de vie exceptionnel autour du Grand Lac, population active qui cherche du neuf. C'est le terrain idéal pour un investissement Jeanbrun : rentable, sécurisé, fiscalement optimisé.
+  </div>
+
+  <div class="section">
+    <div class="section-title">Pourquoi ce marché ?</div>
+    <div class="avantages">
+      <div class="av-card c-rouge"><div class="av-icon">🏔️</div><div class="av-title">Zone A — tension locative avérée</div><div class="av-body">Reclassée en juillet 2024. Demande locative structurellement supérieure à l'offre disponible.</div></div>
+      <div class="av-card c-lac"><div class="av-icon">🌊</div><div class="av-title">Grand Lac · Cadre de vie premium</div><div class="av-body">2e plus grand lac naturel de France. Attractivité touristique et résidentielle forte toute l'année.</div></div>
+      <div class="av-card c-vert"><div class="av-icon">🏗️</div><div class="av-title">Programme neuf RE2020</div><div class="av-body">Zéro travaux pendant 10 ans. DPE A ou B. Frais de notaire réduits à 2,5 % en VEFA.</div></div>
+      <div class="av-card c-or"><div class="av-icon">📅</div><div class="av-title">Fenêtre Jeanbrun jusqu'en 2028</div><div class="av-body">Le dispositif fiscal est limité dans le temps. Agir maintenant, c'est maximiser l'avantage sur 9 ans.</div></div>
+    </div>
+  </div>
+
+  <div class="section" style="padding-top:0;">
+    <div class="section-title">Le Dispositif Jeanbrun en bref</div>
+    <div class="jb-box">
+      <h3>Statut du Bailleur Privé — Loi de finances 2026</h3>
+      <div class="jb-grid">
+        <div class="jb-kpi"><div class="val">3,5 %</div><div class="lbl">Amortissement annuel sur 80 % du prix</div></div>
+        <div class="jb-kpi"><div class="val">8 000 €</div><div class="lbl">Plafond déduit par an (Loc1)</div></div>
+        <div class="jb-kpi"><div class="val">9 ans</div><div class="lbl">Engagement locatif minimum</div></div>
+      </div>
+      <p class="jb-note">L'amortissement est déduit de vos revenus fonciers — mécanisme proche du LMNP, accessible pour la première fois en location nue. Aucun zonage géographique requis. Éligible partout en Savoie.</p>
+    </div>
+  </div>
+
+  <div class="cta-section">
+    <div class="cta-inner">
+      <div class="cta-icon">📊</div>
+      <div class="cta-title">Votre simulation personnalisée</div>
+      <p class="cta-sub">En 2 minutes, je vous prépare une projection chiffrée adaptée à votre profil fiscal et votre capacité d'investissement. Sans engagement.</p>
+      <div class="cta-points">
+        <span class="cta-point">Simulation sur mesure</span>
+        <span class="cta-point">Réponse sous 24h</span>
+        <span class="cta-point">100% confidentiel</span>
+      </div>
+      <button class="btn-cta"
+        data-tally-open="VLbKPE"
+        data-tally-layout="modal"
+        data-tally-width="600"
+        data-tally-emoji-text="👋"
+        data-tally-emoji-animation="wave"
+        data-tally-auto-close="3000">
+        Demander ma simulation →
+      </button>
+      <p class="cta-reassurance">
+        Formulaire sécurisé · Données strictement confidentielles<br>
+        Utilisées uniquement dans le cadre de votre conseil immobilier
+      </p>
+      <div class="cta-contact">
+        Vous préférez un contact direct ?<br>
+        <strong>📱 06 58 92 04 95</strong> · jpclement@meilleursbiens.com
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <div class="footer-left">
+      <strong>Jean-Pierre CLÉMENT</strong>
+      <span>Conseiller immobilier privilégié en Savoie · MeilleursBiens Ambassadeur</span>
+    </div>
+    <div class="footer-right">
+      📱 06 58 92 04 95<br>
+      ✉ jpclement@meilleursbiens.com
+    </div>
+  </div>
+
+</div>
+</body>
+</html>
